@@ -1,6 +1,3 @@
-# Plugins-QGIS-
-Plugins QGIS
-
 # Plugin de Integração de Informações Fundiárias (Empresa XYZ)
 
 Este é um plugin interno desenvolvido para Empresa PEC Energia S.A. totalmente pelo autor do reposiotiro para o QGIS. Ele permite a integração de informações fundiárias a partir de arquivos .kmz e planilhas .xslm. O plugin cruza as informações contidas no arquivo .xlsm, que contém os status de cada propriedade, com as informações dos itens no qgis.
