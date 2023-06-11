@@ -12,13 +12,17 @@ porem nao foi totalmente desenvolvido pois logo depois entrou outras metricas as
   2-Cruza as informacoes de interseccao de aerogeradores e propriedades
 
 Nessa implementacao usou-se a a barra de  menu  do qgis :
+
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/cfadcac1-196c-40fb-8705-4c80059e5032)
 
 E implementou-se o menu qtdesing do qgis:
+
 1)
+
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/ed5c0420-1c5c-479b-bc45-e2bb1a959f4f)
 
 Exemplo de saida do .kmz:
 **A cor e de um dos status do controle interno 
 2)
+
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/7676fe12-65dc-450c-bb62-340d80c6d730)
