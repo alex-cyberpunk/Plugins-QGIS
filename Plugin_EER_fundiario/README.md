@@ -23,6 +23,7 @@ E implementou-se o menu qtdesing do qgis:
 
 Exemplo de saida do .kmz:
 **A cor e de um dos status do controle interno 
+
 2)
 
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/7676fe12-65dc-450c-bb62-340d80c6d730)
