@@ -1,11 +1,12 @@
-Introducao
+##Introducao
+
   A empresa tinha atuacao no campo fundiario e controlava de maneira interna os status ,documentacao e outras informacoes 
 relevantes para a propriedade . Mas o software mais usado era o google earth nesse campo e dentro dos arquivos geograficos da engenharia (em .shp) 
 continha apenas as informacoes geograficas. Dessa forma era necessario implementar uma solucao em codigo aberto que cruza-se as informacoes dos .shp 
 e do controle interno num arquivo em .kmz de forma que usuarios da engenharia pudessem ter uma rotina rapida que gerasse os .kmz quando necessario.
-Muitos dos colaboradores precisavam desse .kmz atualizado para realizar suas atividades diariamente. 
+Muitos dos colaboradores precisavam desses arquivos em .kmz atualizado para realizar suas atividades diariamente. 
 Outra rotina implementada nesse plugin porem nao totalmente desenvolvida foi um cruzamento de interseccao entre aerogeradores e propriedades para metricas internas,
-porem nao foi totalmente desenvolvido pois logo depois entrou outras metricas as quais eu mesmo contribui para desenvolver.
+porem nao foi totalmente desenvolvido , pois logo depois foram implementadas outras metricas as quais eu mesmo contribui para desenvolver.
 
  O Plugin tinha como objetivo original ter duas rotinas: 
   1-Rotina que combina os status de controle interno com itens gerograficos do qgis e gera . kmz 
