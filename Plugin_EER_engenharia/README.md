@@ -1,10 +1,9 @@
 **Introducao**
+
   Eu percebi que poderia ajudar no dia-a-dia da engenharia com algumas rotinas de python , principalmente quando fui designado para cuidar das atividades do validador EOL 
 das entao eu desenvolvi uma implementacao de um submenu que executa codigos file1_1,file1_2....,file4_1 . 
 A ideia por tras disso era: a empresa tem o sharepoint para compartilhar arquivos entao , se eu coloca-se
 os arquivos numa pasta compartilhada qualquer alteracao feita nos codigos individuais seriam sincronizados pelo sharepoint e lidos no diretorio local do usuario.
-
-Introducao:
 Uma das tarefas de muitas empresas de energia e validar Linhas de transmissao , propriedades,aerogeradores ,cones de interferencia...
 e a aneel , orgao regulador validada isso em seu site:
 https://sigel.aneel.gov.br/validadoreol/
