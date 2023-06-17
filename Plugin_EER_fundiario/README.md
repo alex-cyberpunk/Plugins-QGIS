@@ -10,6 +10,7 @@ Outra rotina implementada nesse plugin porem nao totalmente desenvolvida foi um 
 porem nao foi totalmente desenvolvido , pois logo depois foram implementadas outras metricas as quais eu mesmo contribui para desenvolver.
 
  O Plugin tinha como objetivo original ter duas rotinas: 
+  
   1-Rotina que combina os status de controle interno com itens gerograficos do qgis e gera . kmz 
   2-Cruza as informacoes de interseccao de aerogeradores e propriedades
 
