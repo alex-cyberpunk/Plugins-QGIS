@@ -36,11 +36,7 @@ def release_list(a):
    del a
 
 def info(data,path_gpd):
-    Heading =["Proprietário principal","Imóvel","Matrícula", "Contrato", "Área (ha) - matrícula", "Possui topografia?",
-              "Sujeita a distrato?", "Distratada?", "Contratada por concorrente?", "Concorrente Contratante",
-              "Situação do imóvel jan/23","Situação do imóvel fev/23", "Situação do imóvel mar/23", "Situação do imóvel abr/23",
-              "Situação do imóvel mai/23","Situação do imóvel jun/23", "Situação do imóvel jul/23", "Situação do imóvel ago/23",
-              "Situação do imóvel set/23","Situação do imóvel out/23", "Situação do imóvel nov/23", "Situação do imóvel dez/23"]
+    Heading =[]#headiing de informacoes
     (matriz)=le_excel(path_gpd,'Áreas',0,Heading)#use o nome escrito na aba do excel
     prop=[data [i][0] for i in range(len(data)) ]
     coord=[data [i][1] for i in range(len(data)) ]
@@ -54,15 +50,6 @@ def info(data,path_gpd):
         for j in range(len(matriz)):
             matriz_final[j+2].append(matriz[j][index])
 
-    
-    '''
-    #Agora retira-se um '0' do codigo para ficar igual ao codigo do sistema fundiario
-    for i in range(len(matriz_final[0])):
-        if (int(matriz_final[0][i].split('-')[2])<1000):
-            matriz_final[0][i]=matriz_final[0][i].replace('0','',1)
-
-    '''
-    
     Heading.insert(0, "Coordenadas")
     Heading.insert(0, "# Área")
     #print(Heading) 
