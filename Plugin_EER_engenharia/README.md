@@ -1,26 +1,26 @@
 **Introducao**
 
-  Eu percebi que poderia ajudar no dia-a-dia da engenharia com algumas rotinas de python , principalmente quando fui designado para cuidar das atividades do validador EOL ,entao eu desenvolvi uma implementacao de um submenu que executa codigos file1_1,file1_2....,file4_1 . 
-A ideia por tras disso era: a empresa tem o sharepoint para compartilhar arquivos entao , se eu coloca-se
-os arquivos numa pasta compartilhada qualquer alteracao feita nos codigos individuais seriam sincronizados pelo sharepoint e lidos no diretorio local do usuario.
-Uma das tarefas de muitas empresas de energia e validar Linhas de transmissao , propriedades,aerogeradores ,cones de interferencia...
-e a aneel , orgao regulador validada isso em seu site:
-https://sigel.aneel.gov.br/validadoreol/
+Eu percebi que poderia ajudar no dia-a-dia da engenharia com algumas rotinas de Python, principalmente quando fui designado para cuidar das atividades do validador EOL. Então, eu desenvolvi uma implementação de um submenu que executa códigos file1_1, file1_2, ..., file4_1. A ideia por trás disso era a seguinte: a empresa tem o SharePoint para compartilhar arquivos, então, se eu colocasse os arquivos em uma pasta compartilhada, qualquer alteração feita nos códigos individuais seria sincronizada pelo SharePoint e lida no diretório local do usuário.
+
+Uma das tarefas de muitas empresas de energia é validar linhas de transmissão, propriedades, aerogeradores, cones de interferência, etc. A ANEEL, órgão regulador, valida isso em seu site: https://sigel.aneel.gov.br/validadoreol/.
 
 As rotinas desenvolvidas que sao executadas pelo plugin sao : 
 
-1)Operacoes com planilha visando ler ou inserir nas planilhas do validador EOL (Interface Qgis e Validador EOL)
--Le as planilhas geradas pelo validador EOL e inserir para entrega era uma tarefa importante 
-gerando as propriedades,aerogeradores,linhas de tranmissao , cones de interferencia.
+1)Operações com planilha visando ler ou inserir nas planilhas do validador EOL (Interface QGIS e Validador EOL)
+Lê as planilhas geradas pelo validador EOL e insere para entrega, o que era uma tarefa importante, gerando as propriedades, aerogeradores, linhas de transmissão, cones de interferência.
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/a1d47a7d-d22e-41a2-aa5a-9ec4fde2730b)
-file1_1:
-"Excel para Qgis"
-- Coleta as informacoes da planilha do validador EOL
-file1_2:
-"Qgis para Excel"
--Transforma as coordenadas dos poligonos do qgis numa planilha com o compilado de coordenadas. 
 
-2)Operacoes com arquivos .shp (Carrega e Salva feicoes)
+file1_1:
+"Excel para QGIS"
+
+Coleta as informações da planilha do validador EOL.
+file1_2:
+"QGIS para Excel"
+
+Transforma as coordenadas dos polígonos do QGIS em uma planilha com o compilado de coordenadas.
+
+2)Operações com arquivos .shp (Carrega e Salva feições)
+
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/b0d7cc43-2563-4831-9659-d77404801470)
 
 -Le os arquivos de pastas e subpastas e 
