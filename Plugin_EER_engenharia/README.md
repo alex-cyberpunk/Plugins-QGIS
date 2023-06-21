@@ -32,14 +32,15 @@ file2_2:
 3)Operacoes com sobreposicoes
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/aaf2d063-c83d-4e90-8ccb-7caab98be023)
 
--A aneel nao permite nenhuma sobreposicao entre os poligonos e nao permite envio de buffers fora das propriedades,
-dessa forma era necessario verificar quais poligonos e buffers precisavam ser ajustados. 
+A ANEEL não permite nenhuma sobreposição entre os polígonos e não permite o envio de buffers fora das propriedades. Dessa forma, era necessário verificar quais polígonos e buffers precisavam ser ajustados.
 file3_1:
 "Verifica buffers"
-- verifica quais a sobreposicoes de buffers e poligonos
+
+Verifica quais sobreposições de buffers e polígonos existem.
 file3_2:
-"Verifica sobreposicoes de parques"
-- verifica quais a sobreposicoes entre os poligonos
+"Verifica sobreposições de parques"
+
+Verifica quais sobreposições existem entre os polígonos.
 
 4)Operacao de sombreamento
 -No site do validador EOL pode-se observar os cones de interferencia , porem ele constroe esses cones apenas quando os aerogeradores foram inseridos no sistema
