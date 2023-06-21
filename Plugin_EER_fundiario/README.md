@@ -26,7 +26,9 @@ E implementou-se o menu qtdesing do qgis:
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/ed5c0420-1c5c-479b-bc45-e2bb1a959f4f)
 
 Exemplo de saida do .kmz:
-**A cor e de um dos status do controle interno 
+![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/c4bd2c33-9aa5-43cc-a010-f1e176aea7a8)
+
+**As cores sao de um dos status do controle interno e as informacoes sao necessarias para a area da empresa.
 
 2)
 
