@@ -7,6 +7,8 @@ Uma das tarefas de muitas empresas de energia e validar Linhas de transmissao , 
 e a aneel , orgao regulador validada isso em seu site:
 https://sigel.aneel.gov.br/validadoreol/
 
+As rotinas desenvolvidas que sao executadas pelo plugin sao : 
+
 1)Operacoes com planilha visando ler ou inserir nas planilhas do validador EOL (Interface Qgis e Validador EOL)
 -Le as planilhas geradas pelo validador EOL e inserir para entrega era uma tarefa importante 
 gerando as propriedades,aerogeradores,linhas de tranmissao , cones de interferencia.
