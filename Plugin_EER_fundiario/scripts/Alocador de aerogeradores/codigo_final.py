@@ -122,7 +122,7 @@ def salva_excel_existente(paths,aero_area,sobrep,list,nome_base,nome_aba,header_
                 wb = openpyxl.Workbook()
                 ws =  wb.active
                 ws.title = "Aeros"
-                colunas=['Projeto','Fase','Turbina','Área','Sobreposição 1','Sobreposição 2','Sobreposição 3','Sobreposição 4','Sobreposição 5','Sobreposição 6','Sobreposição 7','Sobreposição 8','Sobreposição 9','Sobreposição 10']
+                colunas=['Projeto','Turbina','Área','Sobreposição 1','Sobreposição 2','Sobreposição 3','Sobreposição 4','Sobreposição 5','Sobreposição 6','Sobreposição 7','Sobreposição 8','Sobreposição 9','Sobreposição 10']
                 for i in range(1,15):
                     ws.cell(row=1,column=i).value = colunas[i-1]
             #para xlsm wb=openpyxl.load_workbook(filename=name,read_only=False, keep_vba=True)
