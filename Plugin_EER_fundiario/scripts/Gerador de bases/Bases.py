@@ -107,10 +107,6 @@ def makePlacemark (dados, style):
 	simpledata.text = str(dados['Imóvel']) if str(dados['Imóvel']) != 'nan' else ""
 	simpledata = ET.SubElement(schemaData, 'SimpleData')
 
-	#verificar se status estao corretos
-	#print( dados["# Área"])
-	#print(dados['Situação do imóvel '+ mesAno])
-
 	polygon = ET.SubElement(placemark, 'Polygon')
 	outerboundaryis = ET.SubElement(polygon, 'outerBoundaryIs')
 	lineraring = ET.SubElement(outerboundaryis, "LinearRing")
@@ -164,28 +160,7 @@ def cria_kmz(df,file_atual,pathz):
 	print(mesAno)
 
 	#Cria matriz com nome de projeto e seu código
-	project_name = [["ESV","Serra das Vacas"],
-					["SAL","Serra das Almas"],
-					["SAS","Serra do Assuruá"],
-					["SGA","Serra da Gameleira"],
-					["SIB","Serra de Ibiapaba"],
-					["SPA","Serra da Palmeira"],
-					["SSE","Serra do Seridó"], 
-					["SGO","Gouveia"],
-					["SGW","Serra Geral do Oeste"],
-					["BRE","Bom Retiro"],
-					["CUN","Curral Novo"],
-					["JAG","Jaguarari"],
-					["MEL","Meia Lua"],
-					["SGE","Serra de Gentio do Ouro"],
-					["SEC","Serra da Carneira"],
-					["SDJ","Serra Dom João"],
-					["STE","Serra de Teixeira"],
-					["SDA","Serra do Alegre"],
-					["SCA","Serra de Catolé"],
-					["TDV","Terra dos Ventos"],
-					["VES","Ventos de Simões"],
-					["VCH","Ventos de Velho Chico"]]
+	project_name = [["projeto","nome do projeto"]]
 	projeto=""
 	codigo_projeto=""
 	#Descobre qual projeto está sendo analisado
@@ -201,20 +176,20 @@ def cria_kmz(df,file_atual,pathz):
 	kml = ET.fromstring(orig_xml)
 
 	#Pastas de nível 1 do sistema
-	folders = [{'name': "CONCORRENTES", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'660d00fc'}}, 'subfolder':[]},
-			{'name': "SUJEITA À DISTRATO", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ff00ffff"}, 'polyStyle':{'color':'99898988'}}, 'subfolder':[]},
-			{'name': "DISTRATADA", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'66000000'}}, 'subfolder':[]},
-			{'name': "MAPEADO SEM DOCUMENTOS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'6600ffff'}}, 'subfolder':[]},
-			{'name': "MAPEADO COM DOCUMENTOS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'660055ff'}}, 'subfolder': []},
-			{'name': "ÁREAS CTG", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'ccffffff'}}, 'subfolder':[]},
-			{'name': "CONTRATADO SEM MATRÍCULA", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'66ffff00'}}, 'subfolder':[]},
-			{'name': "PROTOCOLADO CORREDOR DE VENTOS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'66ffcf30'}}, 'subfolder':[]},
-			{'name': "CONTRATADO COM MATRÍCULA EM NOME DE 3º", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'66ffa855'}}, 'subfolder': []},
-			{'name': "CONTRATADO COM MATRÍCULA EM NOME DO PROPRIETÁRIO", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'66ff0000'}}, 'subfolder':[]},
-			{'name': "CONTRATADO COM MATRÍCULA E COM GEO INCRA", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'66ff00aa'}}, 'subfolder':[]},
-			{'name': "CONTRATADO COM MATRÍCULA RETIFICADA E COM GEO INCRA", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'667f00aa'}}, 'subfolder': []},
-			{'name': "REGULARIZADO", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': 'ffffffff'}, 'polyStyle':{'color':'6600aa00'}}, 'subfolder': []},
-			{'name': "REGULARIZADO PADRÃO INTERNACIONAL", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': 'ffffffff'}, 'polyStyle':{'color':'6600aa00'}}, 'subfolder': []}
+	folders = [{'name': "NOME STATUS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'660d00fc'}}, 'subfolder':[]},
+			{'name': "ITEM DE SUBPASTA", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ff00ffff"}, 'polyStyle':{'color':'99898988'}}, 'subfolder':[]},
+			{'name': "ITEM DE SUBPASTA", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'66000000'}}, 'subfolder':[]},
+			{'name': "NOME STATUS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'6600ffff'}}, 'subfolder':[]},
+			{'name': "NOME STATUS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'660055ff'}}, 'subfolder': []},
+			{'name': "NOME STATUS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'ccffffff'}}, 'subfolder':[]},
+			{'name': "NOME STATUS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'66ffff00'}}, 'subfolder':[]},
+			{'name': "NOME STATUS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'66ffcf30'}}, 'subfolder':[]},
+			{'name': "NOME STATUS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'66ffa855'}}, 'subfolder': []},
+			{'name': "NOME STATUS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'66ff0000'}}, 'subfolder':[]},
+			{'name': "NOME STATUS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'66ff00aa'}}, 'subfolder':[]},
+			{'name': "NOME STATUS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': "ffffffff"}, 'polyStyle':{'color':'667f00aa'}}, 'subfolder': []},
+			{'name': "NOME STATUS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': 'ffffffff'}, 'polyStyle':{'color':'6600aa00'}}, 'subfolder': []},
+			{'name': "NOME STATUS", 'element':[], 'idColor':None, 'colors':{'lineStyle':{'width': '2', 'color': 'ffffffff'}, 'polyStyle':{'color':'6600aa00'}}, 'subfolder': []}
 			]
 
 	# Cria root e configurações basicas do documento 
@@ -242,25 +217,24 @@ def cria_kmz(df,file_atual,pathz):
 
 	# aloca os elementos do dataframe nas subpastas do kmz
 	data = df.to_dict('index')
-	#print(data['Situação do imóvel '+ mesAno])
 	numberline = 0
 	for row in data:
 		print(row)
 		numberline = numberline+1
-		if(data[row]['Sujeita a distrato?'] == 'SIM'):
+		if(data[row]['ITEM DE SUBPASTA'] == 'SIM'):
 			if isinstance(data[row]['Possui topografia?'], str):
 				createSubFolder(document,folders[1], data[row], data[row]['Possui topografia??'])
 			else: 
 				createSubFolder(document,folders[1], data[row])
-		elif(data[row]['Distratada?'] == 'SIM'):
+		elif(data[row]['ITEM DE SUBPASTA'] == 'SIM'):
 			if isinstance(data[row]['Possui topografia?'], str):
 				createSubFolder(document,folders[2], data[row], data[row]['Possui topografia?'])
 			else: 
 				createSubFolder(document,folders[2], data[row])
-		elif(data[row]['Contratada por concorrente?'] == 'SIM'):
-			hasSubfolder = verifySubfolder(folders[0], data[row]['Concorrente Contratante'], True)
+		elif(data[row]['ITEM DE SUBPASTA'] == 'SIM'):
+			hasSubfolder = verifySubfolder(folders[0], data[row]['ITEM DE SUBPASTA'], True)
 			if hasSubfolder == False:
-				folderElement = makeFolder(data[row]['Concorrente Contratante'])
+				folderElement = makeFolder(data[row]['ITEM DE SUBPASTA'])
 				folderAux = {'name': data[row]['Concorrente Contratante'], 'element': folderElement, 'colors': folders[0]['colors'],'idColor': folders[0]['idColor'], 'subfolder':[] }
 				if isinstance(data[row]['Possui topografia?'], str):
 					createSubFolder(document,folderAux, data[row], data[row]['Possui topografia?'])
@@ -284,10 +258,10 @@ def cria_kmz(df,file_atual,pathz):
 							createSubFolder(document,folders[i], data[row])
 						break
 				if (encontrou == False):
-					print("Não tem pasta para "+data[row]['Situação do imóvel '+ mesAno])
+					print("Não tem pasta para "+data[row][mesAno])
 
 			else: 
-				print("Existe algum erro aqui: "+ str(data[row]['Situação do imóvel '+ mesAno]))
+				print("Existe algum erro aqui: "+ str(data[row][mesAno]))
 
 	document.append(makeLegenda())
 
