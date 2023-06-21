@@ -14,12 +14,16 @@ Descricao : Lê as planilhas geradas pelo validador EOL e insere para entrega, o
 
 file1_1:
 "Excel para QGIS"
+
 Modo de uso : insira o caminho da pasta onde estao as planilhas do validador EOL e o sirgas
+
 Saida: poligonos no qgis
 
 file1_2:
 "QGIS para Excel"
+
 Modo de uso : insira o caminho da pasta onde deseja salvar o excel
+
 Saida: Uma planilha com o compliado de  Parques e subestacoes (poligonos) , LT (linhas)
 
 2)Operações com arquivos .shp (Carrega e Salva feições)
@@ -32,12 +36,16 @@ Descricao: Le .shps de pastas e subapastas e salva shps em pastas
 
 file2_1:
 "Leitura de arquivos .shp"
+
 Modo de uso : insira o caminho da pasta onde deseja ler os .shps de pastas e subpastas
+
 Saida: poligonos no qgis
 
 file2_2:
 "Gera arquivos .shp"
+
 Modo de uso : insira o caminho da pasta onde deseja salvar os .shps de pastas e subpastas
+
 Saida: Arquivos .shps dos poligonos do qgis
 
 3)Operacoes com sobreposicoes
@@ -57,7 +65,8 @@ Modo de uso : sem entradas apenas execute a rotina
 Saida: print no prompt do python do qgis das sobreposicoes de poligonos
 
 4) Operação de Sombreamento
-Descricao :No site do validador EOL, é possível observar os cones de interferência. No entanto, esses cones são construídos apenas quando os aerogeradores são inseridos no sistema. Dessa forma, seria muito benéfico ter essa informação antecipadamente (para enviar os aerogeradores na posição correta, etc.). Mas afinal, o que são cones de interferência? Na interação de fluidos, como o vento, existe um efeito chamado "efeito de arrasto" (wake effect) [Fonte: Wikipedia - Wake (physics)], que gera uma zona de alta turbulência de vento, tornando a presença de aerogeradores nessa zona inutilizável. Essa zona é denominada "cones de interferência" e é estipulada pela ANEEL como uma área na qual não pode haver outros aerogeradores.
+
+ Descricao :No site do validador EOL, é possível observar os cones de interferência. No entanto, esses cones são construídos apenas quando os aerogeradores são inseridos no sistema. Dessa forma, seria muito benéfico ter essa informação antecipadamente (para enviar os aerogeradores na posição correta, etc.). Mas afinal, o que são cones de interferência? Na interação de fluidos, como o vento, existe um efeito chamado "efeito de arrasto" (wake effect) [Fonte: Wikipedia - Wake (physics)], que gera uma zona de alta turbulência de vento, tornando a presença de aerogeradores nessa zona inutilizável. Essa zona é denominada "cones de interferência" e é estipulada pela ANEEL como uma área na qual não pode haver outros aerogeradores.
 
 file4_1
 "Cones de sombreamento"
