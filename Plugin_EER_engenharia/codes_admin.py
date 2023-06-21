@@ -12,8 +12,10 @@ import subprocess
 ######################
 ########entrada#######
 #####################
-path=r''
-path_code=r''
+path=r''#inserir caminho onde se encontram os codigos
+path_code=r''#inserir caminho onde se encontram os icones do submenu
+
+#codigo com a capacidade de alocar 10 itens de menu com 3 submenus cada
 
 class SaveAttributesPlugin:
     
