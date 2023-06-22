@@ -1,4 +1,4 @@
-**Introducao**
+# Introducao
 
 Eu percebi que poderia ajudar no dia-a-dia da engenharia com algumas rotinas de Python, principalmente quando fui designado para cuidar das atividades do validador EOL. Então, eu desenvolvi uma implementação de um submenu que executa códigos file1_1, file1_2, ..., file4_1. A ideia por trás disso era a seguinte: a empresa tem o SharePoint para compartilhar arquivos, então, se eu colocasse os arquivos em uma pasta compartilhada, qualquer alteração feita nos códigos individuais seria sincronizada pelo SharePoint e lida no diretório local do usuário.
 
@@ -6,7 +6,7 @@ Uma das tarefas de muitas empresas de energia é validar linhas de transmissão,
 
 As rotinas desenvolvidas que sao executadas pelo plugin sao : 
 
-1)Operações com planilha visando ler ou inserir nas planilhas do validador EOL (Interface QGIS e Validador EOL)
+1) Operações com planilha visando ler ou inserir nas planilhas do validador EOL (Interface QGIS e Validador EOL)
 
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/a1d47a7d-d22e-41a2-aa5a-9ec4fde2730b)
 
@@ -15,9 +15,9 @@ Descricao : Lê as planilhas geradas pelo validador EOL e insere para entrega, o
 file1_1:
 "Excel para QGIS"
 
-Modo de uso : insira o caminho da pasta onde estao as planilhas do validador EOL e o sirgas
+Modo de uso: insira o caminho da pasta onde estao as planilhas do validador EOL e o sirgas
 
-Saida: poligonos no qgis
+Saida:poligonos no qgis
 
 file1_2:
 "QGIS para Excel"
@@ -26,7 +26,7 @@ Modo de uso : insira o caminho da pasta onde deseja salvar o excel
 
 Saida: Uma planilha com o compliado de  Parques e subestacoes (poligonos) , LT (linhas)
 
-2)Operações com arquivos .shp (Carrega e Salva feições)
+2) Operações com arquivos .shp (Carrega e Salva feições)
 
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/b0d7cc43-2563-4831-9659-d77404801470)
 
@@ -48,7 +48,7 @@ Modo de uso : insira o caminho da pasta onde deseja salvar os .shps de pastas e 
 
 Saida: Arquivos .shps dos poligonos do qgis
 
-3)Operacoes com sobreposicoes
+3) Operacoes com sobreposicoes
 
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/aaf2d063-c83d-4e90-8ccb-7caab98be023)
 
