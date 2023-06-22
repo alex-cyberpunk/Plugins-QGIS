@@ -1,6 +1,6 @@
 # Plugin do QGIS
 
-Este sao dois plugins interno desenvolvido para Empresa PEC Energia S.A. totalmente pelo autor do reposiotiro para o QGIS. O plugin EER fundiario permite tanto calculo de sobreposicoes de buffers com poligonos ( nao totalmente implementado) e uma rotina que gera kmz num model desejado pela empresa separando os itens do kmz em pastas e subpastas.  O plugin EER engenharia permite executar rotinas proprias para ajudar no trabalho de iteracao com o validador EOL.
+Este sao dois plugins interno desenvolvido para Empresa PEC Energia S.A. desenvolvido totalmente pelo autor do reposiotiro para o QGIS. O plugin EER fundiario permite tanto calculo de sobreposicoes de buffers com poligonos ( nao totalmente implementado) e uma rotina que gera kmz num model desejado pela empresa separando os itens do kmz em pastas e subpastas.  O plugin EER engenharia permite executar rotinas proprias para ajudar no trabalho de iteracao com o validador EOL.
 
 ## Recursos Principais
 
