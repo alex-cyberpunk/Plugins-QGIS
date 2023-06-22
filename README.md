@@ -1,11 +1,11 @@
-# Plugin de Integração de Informações Fundiárias (Empresa XYZ)
+# Plugin do QGIS
 
-Este é um plugin interno desenvolvido para Empresa PEC Energia S.A. totalmente pelo autor do reposiotiro para o QGIS. Ele permite a integração de informações fundiárias a partir de arquivos .kmz e planilhas .xslm. O plugin cruza as informações contidas no arquivo .xlsm, que contém os status de cada propriedade, com as informações dos itens no qgis.
+Este sao dois plugins interno desenvolvido para Empresa PEC Energia S.A. totalmente pelo autor do reposiotiro para o QGIS. O plugin EER fundiario permite tanto calculo de sobreposicoes de buffers com poligonos ( nao totalmente implementado) e uma rotina que gera kmz num model desejado pela empresa separando os itens do kmz em pastas e subpastas.  O plugin EER engenharia permite executar rotinas proprias para ajudar no trabalho de iteracao com o validador EOL.
 
 ## Recursos Principais
 
-- Importação e leitura de arquivos .kmz contendo informações sobre o status de propriedades fundiárias.
-- Importação e leitura de arquivos .xlsx com informações adicionais sobre as propriedades.
+- Importação de arquivos .kmz contendo informações sobre o status de propriedades fundiárias.
+- Importação e leitura de arquivos .xlsx com informações sobre o validador EOL.
 - Integração dos dados do arquivo .kmz e .xlsx para cruzar as informações e obter uma visão completa.
 - Visualização dos resultados no Google earth, permitindo análise espacial e manipulação dos dados integrados.
 
@@ -16,6 +16,7 @@ Este é um plugin interno desenvolvido para Empresa PEC Energia S.A. totalmente 
 ## Instalação
 
 Este plugin foi desenvolvido exclusivamente para uso interno na Empresa Empresa PEC Energia S.A. e não está disponível para download público.
+Caso deseje tirar duvidas ou saber mais sobre o trabalho , favor entrar em contato com o autor do repositorio.
 
 ## Uso
 
