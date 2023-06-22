@@ -1,4 +1,4 @@
-#Introducao
+# Introducao
 
   A empresa tinha atuacao no campo fundiario e controlava de maneira interna os status ,documentacao e outras informacoes 
 relevantes para a propriedade . Mas o software mais usado era o google earth nesse campo e dentro dos arquivos geograficos da engenharia (em .shp) 
@@ -8,7 +8,7 @@ Muitos dos colaboradores precisavam desses arquivos em .kmz atualizado para real
 Outra rotina implementada nesse plugin porem nao totalmente desenvolvida foi um cruzamento de interseccao entre aerogeradores e propriedades para metricas internas,
 porem nao foi totalmente desenvolvido , pois logo depois foram implementadas outras metricas as quais eu mesmo contribui para desenvolver.
 
- O Plugin tinha como objetivo original ter duas rotinas: 
+ ## O Plugin tinha como objetivo original ter duas rotinas: 
   
   1-Rotina que combina os status de controle interno com itens gerograficos do qgis e gera . kmz 
   
@@ -24,7 +24,7 @@ E implementou-se o menu qtdesing do qgis:
 
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/ed5c0420-1c5c-479b-bc45-e2bb1a959f4f)
 
-Exemplo de saida do .kmz:
+## Exemplo de saida do .kmz:
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/c4bd2c33-9aa5-43cc-a010-f1e176aea7a8)
 
 **As cores sao de um dos status do controle interno e as informacoes sao necessarias para a area da empresa.
