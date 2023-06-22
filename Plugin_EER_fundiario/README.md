@@ -1,6 +1,5 @@
-**Introducao**
+#Introducao
 
-  Apos a empresa ter observado minha capacidade de programacao , fui realocado para o TI , com dois objetivos: Gerar os arquivos .kmz para o fundiario e estudar a implementacao de um banco de dados geograficos na empresa.
   A empresa tinha atuacao no campo fundiario e controlava de maneira interna os status ,documentacao e outras informacoes 
 relevantes para a propriedade . Mas o software mais usado era o google earth nesse campo e dentro dos arquivos geograficos da engenharia (em .shp) 
 continha apenas as informacoes geograficas. Dessa forma era necessario implementar uma solucao em codigo aberto que cruza-se as informacoes dos .shp 
