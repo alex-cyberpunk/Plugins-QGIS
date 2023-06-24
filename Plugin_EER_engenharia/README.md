@@ -76,3 +76,5 @@ para o calculo dos cones de interferencia. Essas informacoes podem ser encontrad
 ou usar um layout do qgis.
 Saida:cones de interferencia no qgis dos pontos de turbinas
 
+Exemplo de uso :
+![Untitled-Project-—-QGIS-2023-06-21-16-41-01](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/a6b0a852-2c06-49ed-9f4c-b7de60754c55)
