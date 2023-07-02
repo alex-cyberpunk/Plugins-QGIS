@@ -1,8 +1,11 @@
-# Introducao
+# Plugin EER engenharia
+## Contexto
 
 Eu percebi que poderia ajudar no dia-a-dia da engenharia com algumas rotinas de Python, principalmente quando fui designado para cuidar das atividades do validador EOL. Então, eu desenvolvi uma implementação de um submenu que executa códigos file1_1, file1_2, ..., file4_1. A ideia por trás disso era a seguinte: a empresa tem o SharePoint para compartilhar arquivos, então, se eu colocasse os arquivos em uma pasta compartilhada, qualquer alteração feita nos códigos individuais seria sincronizada pelo SharePoint e lida no diretório local do usuário.
 
 Uma das tarefas de muitas empresas de energia é validar linhas de transmissão, propriedades, aerogeradores, cones de interferência, etc. A ANEEL, órgão regulador, valida isso em seu site: https://sigel.aneel.gov.br/validadoreol/.
+
+## Implementacao
 
 As rotinas desenvolvidas que sao executadas pelo plugin sao : 
 
