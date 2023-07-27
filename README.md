@@ -13,16 +13,6 @@ Este sao dois plugins interno desenvolvido para Empresa PEC Energia S.A. desenvo
 
 - QGIS 3.x ou superior.
 
-## Instalação
-
-Este plugin foi desenvolvido exclusivamente para uso interno na Empresa Empresa PEC Energia S.A. e não está disponível para download público.
-Caso deseje tirar duvidas ou saber mais sobre o trabalho , favor entrar em contato com o autor do repositorio.
-
-## Uso
-
-Como este plugin foi desenvolvido para uso interno na Empresa  PEC Energia S.A., as instruções de uso são fornecidas internamente para os membros da equipe. Para obter mais informações sobre como utilizar o plugin, entre em contato com o departamento responsável.
-
-## Contribuição
 
 Como este plugin é destinado apenas ao uso interno na Empresa  PEC Energia S.A., não aceitamos contribuições externas.
 
