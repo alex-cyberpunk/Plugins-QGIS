@@ -1,39 +1,33 @@
 # Plugin EER fundiario
-## Contexto
+## Context
 
-  A empresa tinha atuacao no campo fundiario e controlava de maneira interna os status ,documentacao e outras informacoes 
-relevantes para a propriedade . Mas o software mais usado era o google earth nesse campo e dentro dos arquivos geograficos da engenharia (em .shp) 
-continha apenas as informacoes geograficas. Dessa forma era necessario implementar uma solucao em codigo aberto que cruza-se as informacoes dos .shp 
-e do controle interno num arquivo em .kmz de forma que usuarios da engenharia pudessem ter uma rotina rapida que gerasse os .kmz quando necessario.
-Muitos dos colaboradores precisavam desses arquivos em .kmz atualizado para realizar suas atividades diariamente. 
-Outra rotina implementada nesse plugin porem nao totalmente desenvolvida foi um cruzamento de interseccao entre aerogeradores e propriedades para metricas internas,
-porem nao foi totalmente desenvolvido , pois logo depois foram implementadas outras metricas as quais eu mesmo contribui para desenvolver.
+  The company operated in the land field and internally managed the status, documentation, and other relevant information for the property. However, the most used software in this field was Google Earth, and within the engineering geographic files (.shp), it only contained geographical information. Therefore, it was necessary to implement an open-source solution that would cross-reference the information from .shp files and the internal control into a .kmz file so that engineering users could have a quick routine to generate .kmz files when needed. Many of the employees needed these updated .kmz files to carry out their daily activities. Another routine implemented in this plugin, although not fully developed, was an intersection crossing between wind turbines and properties for internal metrics. However, it was not fully developed because soon after, other metrics were implemented, which I myself contributed to developing.
 
-## Implementacao
+## Implementation
  
- ### O Plugin tinha como objetivo original ter duas rotinas: 
+ ### The original goal of the plugin was to have two routines: 
   
-  1-Rotina que combina os status de controle interno com itens gerograficos do qgis e gera . kmz 
-  
-  2-Cruza as informacoes de interseccao de aerogeradores e propriedades
+  1- A routine that combines internal control statuses with geographic items from QGIS and generates .kmz files.
 
-Nessa implementacao usou-se a a barra de  menu  do qgis :
+  2- Crosses the intersection information of wind turbines and properties.
+
+In this implementation, the QGIS menu bar was used.
 
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/cfadcac1-196c-40fb-8705-4c80059e5032)
 
-E implementou-se o menu qtdesing do qgis:
+And the QDesign menu of QGIS was implemented.
 
 1)
 
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/ed5c0420-1c5c-479b-bc45-e2bb1a959f4f)
 
-### Exemplo de saida do .kmz:
+### Here is an example of the output .kmz file:
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/c4bd2c33-9aa5-43cc-a010-f1e176aea7a8)
 
-**As cores sao de um dos status do controle interno e as informacoes sao necessarias para a area da empresa.
+**The colors in the .kmz file represent different statuses from the internal control system, and the information provided is essential for the company's operations in the land field.
 
 2)
 
 ![image](https://github.com/alex-cyberpunk/Plugins-QGIS/assets/80361639/7676fe12-65dc-450c-bb62-340d80c6d730)
 
-Obs:Como os Status sao de controle interno da empresa , eles foram ocultados no codigo, mas e possivel ver a logica de implantacao
+Note: As the statuses are part of the company's internal control, they have been concealed in the code, but the implementation logic can still be seen.
