@@ -1,4 +1,4 @@
-# Plugin do QGIS
+# Plugin QGIS
 
 These are two internal plugins developed for PEC Energia S.A. by the repository author, exclusively for QGIS.
 
